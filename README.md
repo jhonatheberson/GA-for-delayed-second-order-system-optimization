@@ -1,13 +1,13 @@
 <h1 align="center">
-    <img alt="Ecoleta" title="#Ecoleta" src="./assets/banner.png" />
+    <img alt="Ecoleta" title="#Ecoleta" src="./assets/simulation.png" />
 </h1>
 
 <h1 align="center">
-   🙂 <a href="#"> Digital image processing </a>
+   🙂 <a href="#"> Genetic algorithm for second-order system optimization with delay, in stable and unstable open-loop systems, with PID controller </a>
 </h1>
 
 <h3 align="center">
-    image processing using the OpenCV library
+    delayed second-order system optimization, using MATLAB
 </h3>
 
 <p align="center">
@@ -41,8 +41,8 @@
 </p>
 
 <h4 align="center"> 
-	 Status: development
-    <!-- Status: Finished -->
+	 <!-- Status: development -->
+    Status: Finished
 </h4>
 
 <p align="center">
@@ -59,32 +59,42 @@
 
 ## About
 
-🌌 Digital image processing - iis the study and application of image processing using [OpenCV](https://docs.opencv.org/master/index.html). with this library we will apply filters, recognize objects, count, among other things in the world of image processing.
+Phenomena such as mechanical vibrations, resonance and oscillations can be mathematically described by second-order differential equation systems, commonly referred to as
+second-order systems. Working with this type of model, instead of first-order state models,
+brings numerical benefits, but there are inherent difficulties in determining their physical
+parameters. The challenges become even more significant when considering the existence
+of delays between state measurements and actuation signals, leading some approaches to
+require post-analysis for determining the stability of calculated solutions. An alternative
+to overcoming the difficulties of parameter measurement is the frequency response approach which utilizes models based on receptance. In view of the issue, this work focuses on
+the design of PID controllers (Proportional-Integral-Derivative) for linear dynamic systems with delay, modeled by second-order matrix differential equations. It adopts the
+receptance approach because it is based on the frequency response of the system, enabling precise treatment of closed-loop stability, without the need for approximations or
+back-testing of delay terms. To ensure robustness and performance, as well as minimize
+the Absolute Error Integral relative to the tracking of a constant reference, it formules an
+optimization problem for the determination of controller gains. Also, it takes into account
+a pre-established stability margin. To solve the optimization problem, it implements a
+Genetic Algorithm. Unlike related works in the literature, the proposed method can be
+equally applied to systems with open-loop poles in the right half-plane.
+
 
 ---
 
 ## Features
 
-- [x] Companies or entities can register on the web platform by sending:
+- [x] Delayed second-order system:
 
-  - [x] an image of the collection point
-  - [x] entity name, email and whatsapp
-  - [x] and the address so that it can appear on the map
-  - [x] in addition to selecting one or more collection items:
-    - lamps
-    - Batteries
-    - papers and cardboard
-    - electronic waste
-    - organic waste
-    - kitchen oil
+  - [x] Open loop stable system
+  - [x] Open loop unstable system
 
-- [x] Users have access to the mobile application, where they can:
-  - [x] browse the map to see the registered institutions
-  - [x] contact the entity via E-mail or WhatsApp
 
+- [x] Genetic algorithm:
+  - [x] Robust optimization
+  - [x] Performance optimization using IAE 
+  
+- [x] Controllers:
+  - [x] Integral and Derivative Proportional (IDP)
 ---
 
-## Layout
+<!-- ## Layout
 
 The application layout is available on Figma:
 
@@ -176,7 +186,7 @@ $ npm run start
 
 ```
 
----
+--- -->
 
 ## Tech Stack
 
